@@ -36,10 +36,23 @@
     > 플레이어의 Hp가 0이 되면 GameOver 이벤트 기능을 수행
     
 2. UserWidget을 활용한 UI 구현
-  - GameStateObserver : GameState를 관찰하여 필요한 정보를 동기화하기 위한 인터페이스 (플레이어의 체력, 상태 등과 현재의 Level, Wave, PlayTime, Score 변동시 반영) 
-  - BaseWidget : UserWidget 클래스를 상속받은 Widget 클래스. 구현할 Widget들의 공통 기능을 구현 및 Observer 인터페이스 상속
-  - FadeWidget : Level 이동, 진입 시에 Fade In, Fade Out 애니메이션을 출력할 Widget 클래스
-  - OptionWidget : 타이틀이나 인게임에서 옵션 호출 시 출력될 Widget 클래스. 게임 사운드의 볼륨을 조작할 수 있다. (인게임에서는 O 키를 입력 받으면 활성화)
-  - TitleWidget : 타이틀 레벨에 출력되는 Widget 클래스. 게임 시작, 옵션, 게임 종료 버튼을 가지고 있다.
-  - InGameWidget : 3개 난이도의 레벨에서 출력되는 Widget 클래스. 체력, 스코어, 상태이상, 스테이지, 웨이브, 플레이 시간 등을 출력하는 기능 수행
-  - EndingWidget : 모든 난이도를 클리어하면 진입하는 엔딩 레벨에 출력되는 Widget 클래스. 개발 정보와 총 플레이 시간, 총 점수가 출력되는 엔딩 크래딧 애니메이션 출력 및 타이틀로 이동, 게임 종료 버튼
+  - GameStateObserver
+      > GameState를 관찰하여 필요한 정보를 동기화하기 위한 인터페이스 (플레이어의 체력, 상태 등과 현재의 Level, Wave, PlayTime, Score 변동시 반영)
+      
+  - BaseWidget
+      > UserWidget 클래스를 상속받은 Widget 클래스. 구현할 Widget들의 공통 기능을 구현 및 Observer 인터페이스 상속
+      
+  - FadeWidget
+      > Level 이동, 진입 시에 Fade In, Fade Out 애니메이션을 출력할 Widget 클래스
+      
+  - OptionWidget
+      > 타이틀이나 인게임에서 옵션 호출 시 출력될 Widget 클래스. 게임 사운드의 볼륨을 조작할 수 있다. (인게임에서는 O 키를 입력 받으면 활성화)
+      
+  - TitleWidget
+      > 타이틀 레벨에 출력되는 Widget 클래스. 게임 시작, 옵션, 게임 종료 버튼을 가지고 있다.
+      
+  - InGameWidget
+      > 3개 난이도의 레벨에서 출력되는 Widget 클래스. 체력, 스코어, 상태이상, 스테이지, 웨이브, 플레이 시간 등을 출력하는 기능 수행
+      
+  - EndingWidget
+      > 모든 난이도를 클리어하면 진입하는 엔딩 레벨에 출력되는 Widget 클래스. 개발 정보와 총 플레이 시간, 총 점수가 출력되는 엔딩 크래딧 애니메이션 출력 및 타이틀로 이동, 게임 종료 버튼
