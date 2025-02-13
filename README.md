@@ -35,7 +35,7 @@
     > Portal에 Overlap 된 상태에서 N 키를 입력하면 GameInstance에 다음 레벨로 이동해야함을 알림(GameInstance의 Level 이동 함수 호출)
     > 플레이어의 Hp가 0이 되면 GameOver 이벤트 기능을 수행
     
-1. UserWidget을 활용한 UI 구현
+2. UserWidget을 활용한 UI 구현
   - GameStateObserver : GameState를 관찰하여 필요한 정보를 동기화하기 위한 인터페이스 (플레이어의 체력, 상태 등과 현재의 Level, Wave, PlayTime, Score 변동시 반영) 
   - BaseWidget : UserWidget 클래스를 상속받은 Widget 클래스. 구현할 Widget들의 공통 기능을 구현 및 Observer 인터페이스 상속
   - FadeWidget : Level 이동, 진입 시에 Fade In, Fade Out 애니메이션을 출력할 Widget 클래스
